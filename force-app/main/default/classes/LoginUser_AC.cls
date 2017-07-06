@@ -10,12 +10,12 @@ public class LoginUser_AC
         {
             if(validate.username__c == username && validate.Passwordd__c == password)
             {
-     	           retURL = new PageReference('https://c.ap4.visual.force.com/apex/LoginUserDetail_VF?id='+validate.Id);                  
+     	           retURL = new PageReference('/apex/LoginUserDetail_VF?id='+validate.Id);                  
                 retURL.setRedirect(true);              
             }
             else if(username=='Admin' && password =='Admin123')
             {
-                 retURL = new PageReference('https://c.ap4.visual.force.com/apex/UsersList_VF');
+                 retURL = new PageReference('/apex/UsersList_VF');
                                             retURL.setRedirect(true);
             }   
             else
