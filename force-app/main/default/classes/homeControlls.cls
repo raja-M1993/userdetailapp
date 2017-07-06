@@ -2,7 +2,7 @@ public class homeControlls {
     public PageReference validateAndRedirect(){
 
       //Write your logic here and redirect
-      PageReference retURL = new PageReference('https://c.ap4.visual.force.com/apex/SignupPage');
+      PageReference retURL = new PageReference('/apex/SignupPage');
       retURL.setRedirect(true);
       return retURL;
 
@@ -10,7 +10,7 @@ public class homeControlls {
     public PageReference loginRedirect(){
 
       //Write your logic here and redirect
-      PageReference retURL = new PageReference('https://c.ap4.visual.force.com/apex/Login_VF');
+      PageReference retURL = new PageReference('/apex/Login_VF');
       retURL.setRedirect(true);
       return retURL;
 

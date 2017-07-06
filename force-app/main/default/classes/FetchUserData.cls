@@ -51,14 +51,14 @@ return getRecordVal;
         userUpdate.username__c=username;
         System.debug(recname+'******************* '+email+' *********'+username);
         update userUpdate;
-         retURL = new PageReference('https://c.ap4.visual.force.com/apex/LoginUserDetail_VF?id='+recid);
+         retURL = new PageReference('/apex/LoginUserDetail_VF?id='+recid);
          retURL.setRedirect(true);
         return retURL;
         
     }
      public PageReference Logout()
     {
-        retURL = new PageReference('https://c.ap4.visual.force.com/apex/Home');
+        retURL = new PageReference('/apex/Home');
          retURL.setRedirect(true);
          return retURL;
     }
