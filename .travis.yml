@@ -20,6 +20,7 @@ script:
 - sfdx force:org:delete -u usertestingapp -p
 - sfdx force:org:create -v HubOrg -s -f config/project-scratch-def.json -a deployorg
 - sfdx force:user:password:generate
+- sfdx force:org:display
 - mkdir mdapioutputdir
 - sfdx force:source:convert -d mdapioutputdir/
 - sfdx force:mdapi:deploy -d mdapioutputdir/ -u deployorg
